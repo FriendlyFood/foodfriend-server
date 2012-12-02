@@ -392,7 +392,7 @@
 			<div id="azucares"></div>
 		  </ul>
 		  </div>
-		  <button value="volver" type="submit">Volver</button>
+		  <a href="/" class="btn">Volver</a>
       </div>
 
       <!-- /END THE FEATURETTES -->

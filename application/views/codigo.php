@@ -61,7 +61,7 @@
 			
 			<article>
 				<section>
-					<form class="well">
+					<form class="well" action="/welcome/ficha/" method="POST">
 					  <fieldset>
 						<legend>Codigo de Barra</legend>
 						<label>Codigo de Barra</label>

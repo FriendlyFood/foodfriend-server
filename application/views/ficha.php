@@ -35,7 +35,7 @@
 		}	 
 		
 		$(document).ready(function () {
-			var frank_param = gup( 'codigo' );
+			var frank_param = <?=$search?>;
 			//alert(frank_param);
 			$.ajax({ // ajax call starts
 				url: 'http://api.friendlyfood.me/api/search/producto/code/'+frank_param+'/format/json', 

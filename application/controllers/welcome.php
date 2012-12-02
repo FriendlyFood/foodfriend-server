@@ -27,8 +27,18 @@ class Welcome extends CI_Controller {
 	
 	function ficha()
 	{
+		if(isset($_POST['work']))
+		{
+			$data['search'] = $_POST['work'];
+		} else if(isset($_POST['work']))
+		{
+			$data['search'] = $_POST['work'];
+		} else
+		{
+			$data['search'] = 0;
+		}
 		$this->load->helper('url');
-		$this->load->view('ficha');
+		$this->load->view('ficha',$data);
 	}
 }
 

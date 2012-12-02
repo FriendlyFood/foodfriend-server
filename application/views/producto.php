@@ -60,11 +60,11 @@
 			<article>
 				<section>
 				
-				<form class="well">
+				<form class="well" action="/welcome/ficha/" method="POST">
 				  <fieldset>
 					<legend>Producto</legend>
 					<label>Nombre Producto</label>
-					<input type="text" placeholder="Ejemplo PAPAS LAYS CORTE AMERICANO">
+					<input type="text" placeholder="Ejemplo PAPAS LAYS CORTE AMERICANO" name="word" id="word">
 					<span class="help-block">Ingrese Nombre del Producto que aparece en la etiqueta de precio.</span>
 					<button type="submit" class="btn">Buscar</button>
 				  </fieldset>

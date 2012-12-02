@@ -24,7 +24,7 @@ class Search extends REST_Controller
 		parent::__construct();
 		// $this->load->model('productos_model','productos');
 	}
-	   
+	/* */  
 	function producto_get()
     {
         if(!$this->get('code'))
@@ -34,24 +34,36 @@ class Search extends REST_Controller
 
         // $user = $this->productos->getProducto( $this->get('id') );
     	$users = array(
-			1 => array('code' => 1, 'name' => 'Flag', 'calorias' => '10000', 'azucar' => 'rojo'),
-			2 => array('id' => 2, 'name' => 'Person Face', 'email' => 'example2@example.com', 'fact' => 'Has a huge face'),
-			3 => array('id' => 3, 'name' => 'Scotty', 'email' => 'example3@example.com', 'fact' => 'Is a Scott!', array('hobbies' => array('fartings', 'bikes'))),
+			6 => array('id' => 1, 'name' => 'Flag', 'calorias' => '10000', 'azucar' => 'rojo'),
+			7 => array('id' => 2, 'name' => 'Person Face', 'email' => 'example2@example.com', 'fact' => 'Has a huge face'),
+			8 => array('id' => 3, 'name' => 'Scotty', 'email' => 'example3@example.com', 'fact' => 'Is a Scott!', array('hobbies' => array('fartings', 'bikes'))),
+			9 => array('nombre' => 'PAPAS LAYS CORTE AMERICANO', 'marca' => 'LAYS' , 'categoria' => 'SNACK' , 'indicador' => '3'),
+			10 => array('nombre' => 'SNACK MIX LAYS', 'marca' => 'LAYS' , 'categoria' => 'SNACK' , 'indicador' => '2'),
 		);
 		
-    	$user = @$users[$this->get('code')];
+		$productos = array(
+			1 => array('UNSPSC' => '7802000002557', 'nombre' => 'PAPAS LAYS CORTE AMERICANO', 'marca' => 'LAYS' , 'categoria' => 'SNACK' , 'indicador' => '3'),
+			2 => array('UNSPSC' => '7802000007569', 'nombre' => 'SNACK MIX LAYS', 'marca' => 'LAYS' , 'categoria' => 'SNACK' , 'indicador' => '2'),
+			3 => array('UNSPSC' => '7802215512285', 'nombre' => 'FRAC CHOCOLATE RELLENO VAINILLA', 'marca' => 'COSTA' , 'categoria' => 'GALLETAS' , 'indicador' => '1'),
+			4 => array('UNSPSC' => '8480000107480', 'nombre' => 'LECHE SEMIDESCREMADA SURLAT', 'marca' => 'SURLAT' , 'categoria' => 'LECHES' , 'indicador' => '4')
+		);
+		
+    	// $user = @$users[$this->get('code')];
+    	$producto = @$productos[$this->get('code')];
+    	// $producto = @$users[$this->get('code')];
     	
-        if($user)
+        if($producto)
         {
-            $this->response($user, 200); // 200 being the HTTP response code
+            $this->response($producto, 200); // 200 being the HTTP response code
         }
 
         else
         {
-            $this->response(array('error' => 'User could not be found'), 404);
+            $this->response(array('error' => 'Barcode could not be found'), 404);
         }
     }
-    
+    /* */
+	
     function user_post()
     {
         //$this->some_model->updateUser( $this->get('id') );

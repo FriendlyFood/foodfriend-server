@@ -312,7 +312,7 @@
 		
 		$(document).ready(function () {
 			// var frank_param = "8480000107480"; // gup( 'code' );
-			var frank_param = <?=$search?>;
+			var frank_param = gup( 'codigo' );
 			// alert(frank_param);
 			$.ajax({ // ajax call starts
 				url: 'http://dal.friendlyfood.me/api/search/producto/code/'+frank_param+'/format/json', 

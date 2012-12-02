@@ -366,7 +366,7 @@
 		  <hr class="featurette-divider">
 		  <div class="wrapper-ficha">
 		  <p class="detail-title">Producto</p>
-		  <div id="producto"></div>
+		  <div id="producto"><?=$producto['NombreProducto']?></div>
 		  <div class="wrapper-sugerencia">
 		  <p class="detail-title">Sugerencia</p>
 		  <p class="sugerencia-info">
@@ -376,19 +376,19 @@
 		  
 		  <ul class="list-results">
 			<li class="red-class"> <strong>Calorias</strong>
-			<div id="calorias"></div>
+			<div id="calorias"><? $this->load->view('semaforo',array('id'=>$producto['KcalFlag'])?></div>
 			
 			<li class="green-class"> <strong>Grasas</strong> 
-			<div id="grasas"></div>
+			<div id="grasas"><? $this->load->view('semaforo',array('id'=>$producto['GrasaFlag']))?></div>
 
 			<li class="yellow-class"> <strong>Grasas Saturadas</strong> 
-			<div id="saturadas"></div>
+			<div id="saturadas"><? $this->load->view('semaforo',array('id'=>$producto['GrasaSaturadaFlag']))?></div>
 			
 			<li class="red-class"> <strong>Sodio</strong> 
-			<div id="sodio"></div>
+			<div id="sodio"><? $this->load->view('semaforo',array('id'=>$producto['HdeCFlag']))?></div>
 			
 			<li class="green-class"> <strong>Azucares</strong> 
-			<div id="azucares"></div>
+			<div id="azucares"><? $this->load->view('semaforo',array('id'=>$producto['SodioFlag']))?></div>
 		  </ul>
 		  </div>
 		  <a href="/" class="btn">Volver</a>

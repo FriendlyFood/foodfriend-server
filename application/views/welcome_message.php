@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Pollos en Dieta</title>
+    <title>FriendlyFood</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -39,11 +39,11 @@
 				<section>
 				
 				<ul class="landing-btns" >
-					<li><div class="boton"><a class="boton" href="searchCod.html">Código de Barra</a></div></li>
+					<li><div class="boton"><a class="boton" href="/welcome/codigo/">CÃ³digo de Barra</a></div></li>
 					<br />
-					<li><div class="boton"><a class="boton" href="searchProd.html">Busca tu Producto</a></div></li>
+					<li><div class="boton"><a class="boton" href="/welcome/producto/">Busca tu Producto</a></div></li>
 					<br />
-					<li><div class="boton"><a class="boton" href="#">Contacto</a></div></li>
+					<li><div class="boton"><a class="boton" href="http://friendlyfood.me/">Contacto</a></div></li>
 				</ul>
 				
 				

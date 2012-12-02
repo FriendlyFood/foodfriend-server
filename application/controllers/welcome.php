@@ -12,6 +12,24 @@ class Welcome extends CI_Controller {
 		$this->load->helper('url');
 		$this->load->view('welcome_message');
 	}
+	
+	function codigo()
+	{
+		$this->load->helper('url');
+		$this->load->view('codigo');
+	}
+	
+	function producto()
+	{
+		$this->load->helper('url');
+		$this->load->view('producto');
+	}
+	
+	function ficha()
+	{
+		$this->load->helper('url');
+		$this->load->view('ficha');
+	}
 }
 
 /* End of file welcome.php */

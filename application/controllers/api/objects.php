@@ -21,7 +21,6 @@ class Objects extends REST_Controller
 	
     function user_post()
     {
-        //$this->some_model->updateUser( $this->get('id') );
         $indicador = array('idIndicador' => $this->post('idIndicador'),
 		'Fecha' => $this->post('Fecha'), 
 		'Grasa' => $this->post('Grasa'), 
@@ -29,8 +28,14 @@ class Objects extends REST_Controller
 		'HdeC' => $this->post('HdeC'), 
 		'Sodio' => $this->post('Sodio'), 
 		'Kcal' => $this->post('Kcal'), 
-		'idProducto' => $this->get('idProducto'), 
-		'message' => 'ADDED!');
+		'idProducto' => $this->get('idProducto')
+		);
+		
+		$this->load->model("producto_model","producto");
+        
+		$this->producto->insert_producto( $indicador );
+        $message = array('message' => 'ADDED!');
+        
         
         $this->response($message, 200); // 200 being the HTTP response code
     }

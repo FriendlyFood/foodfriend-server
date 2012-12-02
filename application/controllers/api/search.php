@@ -38,12 +38,63 @@ class Search extends REST_Controller
             $producto = $this->mproductos->get_product_bycode( $this->get('code') );
 
         } else if($this->get('word'))
-
         {
 
             $producto = $this->mproductos->get_product_byword( $this->get('word') );
 
         }
+		
+		if($producto['Grasa']<=3)
+		{
+			$producto['GrasaFlag'] = 0;
+		}
+		else if ($producto['Grasa']>3&&$producto['Grasa']<20)
+		{
+			$producto['GrasaFlag'] = 1;
+		}
+		else if ($producto['Grasa']>=20)
+		{
+			$producto['GrasaFlag'] = 2;
+		}		
+		
+		if($producto['GrasaSaturada']<=1.5)
+		{
+			$producto['GrasaSaturadaFlag'] = 0;
+		}
+		else if ($producto['GrasaSaturada']>1.5&&$producto['GrasaSaturada']<5)
+		{
+			$producto['GrasaSaturadaFlag'] = 1;
+		}
+		else if ($producto['GrasaSaturada']>=5)
+		{
+			$producto['GrasaSaturadaFlag'] = 2;
+		}	
+
+		if($producto['HdeC']<=5)
+		{
+			$producto['HdeCFlag'] = 0;
+		}
+		else if ($producto['HdeC']>5&&$producto['HdeC']<12.5)
+		{
+			$producto['HdeCFlag'] = 1;
+		}
+		else if ($producto['HdeC']>=12.5)
+		{
+			$producto['HdeCFlag'] = 2;
+		}		
+		
+		if($producto['Sodio']<=150)
+		{
+			$producto['SodioFlag'] = 0;
+		}
+		else if ($producto['Sodio']>150&&$producto['Sodio']<300)
+		{
+			$producto['SodioFlag'] = 1;
+		}
+		else if ($producto['Sodio']>=300)
+		{
+			$producto['SodioFlag'] = 2;
+		}				
 
 	    	
         if($producto)

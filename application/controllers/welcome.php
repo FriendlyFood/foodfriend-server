@@ -27,12 +27,12 @@ class Welcome extends CI_Controller {
 	
 	function ficha()
 	{
-		if(isset($_POST['work']))
+		if(isset($_POST['word']))
 		{
-			$data['search'] = $_POST['work'];
-		} else if(isset($_POST['work']))
+			$data['search'] = $_POST['word'];
+		} else if(isset($_POST['codigo']))
 		{
-			$data['search'] = $_POST['work'];
+			$data['search'] = $_POST['codigo'];
 		} else
 		{
 			$data['search'] = 0;

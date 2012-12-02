@@ -1,89 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="utf-8">
-	<title>Welcome to CodeIgniter</title>
+  <head>
+    <meta charset="utf-8">
+    <title>Pollos en Dieta</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-<style type="text/css">
+    <!-- Le styles -->
+    <link href="/assets/css/bootstrap.css" rel="stylesheet">
+    <link href="/assets/css/bootstrap-responsive.css" rel="stylesheet">
+	<link href="/assets/css/style.css" rel="stylesheet">
 
-body {
- background-color: #fff;
- margin: 40px;
- font-family: Lucida Grande, Verdana, Sans-serif;
- font-size: 14px;
- color: #4F5155;
-}
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
 
-a {
- color: #003399;
- background-color: transparent;
- font-weight: normal;
-}
+    <!-- Fav and touch icons -->
+    <link rel="shortcut icon" href="/assets/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="/assets/ico/apple-touch-icon-57-precomposed.png">
+  </head>
 
-h1 {
- color: #444;
- background-color: transparent;
- border-bottom: 1px solid #D0D0D0;
- font-size: 16px;
- font-weight: bold;
- margin: 24px 0 2px 0;
- padding: 5px 0 6px 0;
-}
+  <body class="landing">
 
-code {
- font-family: Monaco, Verdana, Sans-serif;
- font-size: 12px;
- background-color: #f9f9f9;
- border: 1px solid #D0D0D0;
- color: #002166;
- display: block;
- margin: 14px 0 14px 0;
- padding: 12px 10px 12px 10px;
-}
+	
+	<div id="main-container">
+		<div id="main" class="wrapper clearfix">
+			
+			<article>
+				<header>
+					<h1><img src="/assets/img/logo-landing.png" alt="logotipo" /></h1>
+					<h2 class="tagline">Encuentra tus productos saludables</h2>
+				</header>
+				<section>
+				
+				<ul class="landing-btns" >
+					<li><div class="boton"><a class="boton" href="searchCod.html">Código de Barra</a></div></li>
+					<br />
+					<li><div class="boton"><a class="boton" href="searchProd.html">Busca tu Producto</a></div></li>
+					<br />
+					<li><div class="boton"><a class="boton" href="#">Contacto</a></div></li>
+				</ul>
+				
+				
+				
+				</section>
+				
+			</article>
+			
+		</div> <!-- #main -->
+	</div> <!-- #main-container -->
 
-</style>
-</head>
-<body>
+	<div id="footer-container">
+		<footer class="wrapper">
+			
+		</footer>
+	</div>
 
-<h1>Welcome to CodeIgniter!</h1>
-
-<p>The page you are looking at is being generated dynamically by CodeIgniter.</p>
-
-<ul>
-	<li><a href="<?php echo site_url('api/example/users');?>">Users</a> - defaulting to XML</li>
-	<li><a href="<?php echo site_url('api/example/users/format/csv');?>">Users</a> - get it in CSV</li>
-	<li><a href="<?php echo site_url('api/example/user/id/1');?>">User #1</a> - defaulting to XML</li>
-	<li><a href="<?php echo site_url('api/example/user/id/1/format/json');?>">User #1</a> - get it in JSON</li>
-	<li><a id="ajax" href="<?php echo site_url('api/example/users/format/json');?>">Users</a> - get it in JSON (AJAX request)</li>
-</ul>
-
-<p>If you are exploring CodeIgniter for the very first time, you should start by reading the <a href="user_guide/">User Guide</a>.</p>
-
-<p><br />Page rendered in {elapsed_time} seconds</p>
-
-<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
-<script type="text/javascript">
-$(function(){
-	// Bind a click event to the 'ajax' object id
-	$("#ajax").bind("click", function( evt ){
-		// Javascript needs totake over. So stop the browser from redirecting the page
-		evt.preventDefault();
-		// AJAX request to get the data
-		$.ajax({
-			// URL from the link that was clicked on
-			url: $(this).attr("href"),
-			// Success function. the 'data' parameter is an array of objects that can be looped over
-			success: function(data, textStatus, jqXHR){
-				alert('Successful AJAX request!');
-			}, 
-			// Failed to load request. This could be caused by any number of problems like server issues, bad links, etc. 
-			error: function(jqXHR, textStatus, errorThrown){
-				alert('Oh no! A problem with the AJAX request!');
-			}
-		});
-	});
-});
-</script>
-
-</body>
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="/assets/js/jquery.js"></script>
+    <script src="/assets/js/bootstrap.min.js"></script>
+	<script src="/assets/js/libs/modernizr-2.0.6.min.js"></script>
+    <script>
+      !function ($) {
+        $(function(){
+          // carousel demo
+          $('#myCarousel').carousel()
+        })
+      }(window.jQuery)
+    </script>
+  </body>
 </html>

@@ -311,10 +311,10 @@
 		
 		$(document).ready(function () {
 			// var frank_param = "8480000107480"; // gup( 'code' );
-			var frank_param = gup( 'codigo' );
+			//var frank_param = gup( 'codigo' );
 			// alert(frank_param);
 			$.ajax({ // ajax call starts
-				url: 'http://dal.friendlyfood.me/api/search/producto/code/'+frank_param+'/format/json', 
+				url: 'http://dal.friendlyfood.me/api/search/producto/code/<?php=$search?>/format/json', 
 				dataType: 'json', // Choosing a JSON datatype
 				success: 
 				function(data) // Variable data constains the data we get from serverside

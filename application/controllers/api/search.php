@@ -44,6 +44,8 @@ class Search extends REST_Controller
 
         }
 		
+		//Parametros del estado
+		
 		if($producto['Grasa']<=3)
 		{
 			$producto['GrasaFlag'] = 0;
@@ -94,8 +96,18 @@ class Search extends REST_Controller
 		else if ($producto['Sodio']>=300)
 		{
 			$producto['SodioFlag'] = 2;
-		}				
-
+		}
+		
+		//Analisis de calorias
+		
+		if($producto['Kcal']<=25.2)
+		{
+			$producto['KcalFlag'] = 0;
+		}
+		else
+		{
+			$producto['KcalFlag'] = 2;
+		}
 	    	
         if($producto)
         {

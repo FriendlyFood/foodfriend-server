@@ -8,14 +8,13 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	
-	<title>Pollos en Dieta</title>
+	<title>FriendlyFood</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="Ficha de calidad de un alimento">
 	<meta name="author" content="Chubasco">
 		
 	<link rel="shortcut icon" href="/favicon.ico">
 	<link rel="apple-touch-icon" href="/apple-touch-icon.png">
-	<link rel="stylesheet" href="css/style.css?v=2">
  
  <!-- Le styles -->
     <link href="/assets/css/bootstrap.css" rel="stylesheet">
@@ -270,7 +269,7 @@
   </head>
 
  
-	<script src="/assets/js/libs/modernizr-1.7.min.js"></script>
+	<script src="/assets/js/libs/modernizr-2.0.6.min.js"></script>
     <script src="/assets/js/jquery.js"></script>
 
 	 <script type="text/javascript">	

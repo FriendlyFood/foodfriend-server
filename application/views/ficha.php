@@ -18,9 +18,9 @@
 	<link rel="stylesheet" href="css/style.css?v=2">
  
  <!-- Le styles -->
-    <link href="assets/css/bootstrap.css" rel="stylesheet">
-	<link href="assets/css/style.css" rel="stylesheet" media="screen">
-    <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="/assets/css/bootstrap.css" rel="stylesheet">
+	<link href="/assets/css/style.css" rel="stylesheet" media="screen">
+    <link href="/assets/css/bootstrap-responsive.css" rel="stylesheet">
     <style>
 
     /* GLOBAL STYLES
@@ -262,16 +262,16 @@
     <![endif]-->
 
     <!-- Fav and touch icons -->
-    <link rel="shortcut icon" href="assets/ico/favicon.ico">
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+    <link rel="shortcut icon" href="/assets/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="/assets/ico/apple-touch-icon-57-precomposed.png">
   </head>
 
  
-	<script src="assets/js/libs/modernizr-1.7.min.js"></script>
-    <script src="assets/js/jquery.js"></script>
+	<script src="/assets/js/libs/modernizr-1.7.min.js"></script>
+    <script src="/assets/js/jquery.js"></script>
 
 	 <script type="text/javascript">	
 	 
@@ -291,18 +291,18 @@
 			if(id==0)
 			{
 				$(label).append('<em> producto no recomendado </em>');
-				$(label).append('<img src="assets/img/green-signal.png" alt="Rojo"/>');
+				$(label).append('<img src="/assets/img/green-signal.png" alt="Rojo"/>');
 				$(label).append('assets/img/green-signal.png');
 			}
 			else if(id==1)
 			{
 				$(label).append('<em> precaucion </em>');
-				$(label).append('<img src="assets/img/yellow-signal.png" alt="Amarillo"/>');
+				$(label).append('<img src="/assets/img/yellow-signal.png" alt="Amarillo"/>');
 			}
 			else if(id==2)
 			{
 				$(label).append('<em> producto no recomendado </em>');
-				$(label).append('<img src="assets/img/red-signal.png" alt="Rojo"/>');
+				$(label).append('<img src="/assets/img/red-signal.png" alt="Rojo"/>');
 			}
 			else
 			{

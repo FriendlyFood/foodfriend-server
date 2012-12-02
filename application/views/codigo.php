@@ -42,7 +42,7 @@
 			<span class="icon-bar"></span>
 			<span class="icon-bar"></span>
 		  </a>
-		  <a class="brand" href="index.html"><img src="/assets/img/friendly-food-logo.png" alt="" /></a>
+		  <a class="brand" href="/"><img src="/assets/img/friendly-food-logo.png" alt="" /></a>
 		  <!-- Responsive Navbar Part 2: Place all navbar contents you want collapsed withing .navbar-collapse.collapse. -->
 		  <div class="nav-collapse collapse">
 			<ul class="nav">

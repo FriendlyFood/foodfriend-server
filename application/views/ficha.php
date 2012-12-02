@@ -35,10 +35,10 @@
 		}	 
 		
 		$(document).ready(function () {
-			var frank_param = <?=$search?>;
+			//var frank_param = gup('codigo');
 			//alert(frank_param);
 			$.ajax({ // ajax call starts
-				url: 'http://api.friendlyfood.me/api/search/producto/code/'+frank_param+'/format/json', 
+				url: 'http://api.friendlyfood.me/api/search/producto/code/<?=$search?>/format/json', 
 				dataType: 'json', // Choosing a JSON datatype
 				success: 
 				function(data) // Variable data constains the data we get from serverside

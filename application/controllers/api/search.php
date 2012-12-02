@@ -22,7 +22,7 @@ class Search extends REST_Controller
 	public function __construct()
 	{
 		parent::__construct();
-		// $this->load->model('productos_model','productos');
+		$this->load->model('producto_model','mproductos');
 	}
 	/* */  
 	function producto_get()
@@ -32,26 +32,17 @@ class Search extends REST_Controller
         	$this->response(NULL, 400);
         }
 
-        // $user = $this->productos->getProducto( $this->get('id') );
-    	$users = array(
-			6 => array('id' => 1, 'name' => 'Flag', 'calorias' => '10000', 'azucar' => 'rojo'),
-			7 => array('id' => 2, 'name' => 'Person Face', 'email' => 'example2@example.com', 'fact' => 'Has a huge face'),
-			8 => array('id' => 3, 'name' => 'Scotty', 'email' => 'example3@example.com', 'fact' => 'Is a Scott!', array('hobbies' => array('fartings', 'bikes'))),
-			9 => array('nombre' => 'PAPAS LAYS CORTE AMERICANO', 'marca' => 'LAYS' , 'categoria' => 'SNACK' , 'indicador' => '3'),
-			10 => array('nombre' => 'SNACK MIX LAYS', 'marca' => 'LAYS' , 'categoria' => 'SNACK' , 'indicador' => '2'),
-		);
+        $producto = $this->mproductos->get_product( $this->get('code') );
 		
-		$productos = array(
-			1 => array('UNSPSC' => '7802000002557', 'nombre' => 'PAPAS LAYS CORTE AMERICANO', 'marca' => 'LAYS' , 'categoria' => 'SNACK' , 'indicador' => '3'),
-			2 => array('UNSPSC' => '7802000007569', 'nombre' => 'SNACK MIX LAYS', 'marca' => 'LAYS' , 'categoria' => 'SNACK' , 'indicador' => '2'),
-			3 => array('UNSPSC' => '7802215512285', 'nombre' => 'FRAC CHOCOLATE RELLENO VAINILLA', 'marca' => 'COSTA' , 'categoria' => 'GALLETAS' , 'indicador' => '1'),
-			4 => array('UNSPSC' => '8480000107480', 'nombre' => 'LECHE SEMIDESCREMADA SURLAT', 'marca' => 'SURLAT' , 'categoria' => 'LECHES' , 'indicador' => '4')
-		);
-		
-    	// $user = @$users[$this->get('code')];
-    	$producto = @$productos[$this->get('code')];
-    	// $producto = @$users[$this->get('code')];
-    	
+		/*$datos = $this->db->query('SELECT p.codUNSPSC AS CodigoDeBarra, p.NombreProducto, m.Nombre AS Marca, c.Nombre AS Categoria, i.Kcal AS Calorias, i.grasa AS GrasaTotal, i.grasasaturada AS GrasaSaturada, i.HdeC AS HidratosC, i.Sodio AS Sodio
+FROM  `tbproducto` p
+INNER JOIN tbMarca m ON ( m.idMarca = p.idMarca ) 
+INNER JOIN tbCategoria c ON ( c.idCategoria = p.idCategoria ) 
+INNER JOIN tbIndicador i ON ( i.idIndicador = p.idIndicador ) 
+WHERE (
+p.idIndicador >0
+)');*/
+	    	
         if($producto)
         {
             $this->response($producto, 200); // 200 being the HTTP response code
@@ -80,7 +71,7 @@ class Search extends REST_Controller
         $this->response($message, 200); // 200 being the HTTP response code
     }
     
-    function users_get()
+    function inte()
     {
         //$users = $this->some_model->getSomething( $this->get('limit') );
         $users = array(

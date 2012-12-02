@@ -77,7 +77,7 @@
 				
 		        <div id="labelComponente">sodio</div>
 				<div id="sodio"></div>
-				<button value="volver" type="submit">Volver</button>
+				<a href="/" class="btn" type="submit">Volver</button>
 			</form>
 		</div>
 	</div>

@@ -27,7 +27,7 @@ class Welcome extends CI_Controller {
 	
 	function ficha()
 	{
-        if($_POST['codigo']))
+        if($_POST['codigo'])
         {
 
             $producto = $this->mproductos->get_product_bycode( $_POST['codigo'] );

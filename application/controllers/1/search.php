@@ -41,7 +41,7 @@ class Search extends REST_Controller
         {
 
             $producto = $this->mproductos->get_product_byword( $this->get('word') );
-
+print_r($producto);
         }
 		
 		//Parametros del estado

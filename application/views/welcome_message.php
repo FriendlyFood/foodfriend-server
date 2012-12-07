@@ -8,9 +8,9 @@
     <meta name="author" content="">
 
     <!-- Le styles -->
-    <link href="/assets/css/bootstrap.css" rel="stylesheet">
-    <link href="/assets/css/bootstrap-responsive.css" rel="stylesheet">
-	<link href="/assets/css/style.css" rel="stylesheet">
+    <link href="<?=base_url('assets/css/bootstrap.css')?>" rel="stylesheet">
+    <link href="<?=base_url('assets/css/bootstrap-responsive.css')?>" rel="stylesheet">
+	<link href="<?=base_url('assets/css/style.css')?>" rel="stylesheet">
 
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
@@ -18,11 +18,11 @@
     <![endif]-->
 
     <!-- Fav and touch icons -->
-    <link rel="shortcut icon" href="/assets/ico/favicon.ico">
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/ico/apple-touch-icon-144-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/assets/ico/apple-touch-icon-114-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/assets/ico/apple-touch-icon-72-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" href="/assets/ico/apple-touch-icon-57-precomposed.png">
+    <link rel="shortcut icon" href="<?=base_url('assets/ico/favicon.ico')?>">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="<?=base_url('assets/ico/apple-touch-icon-144-precomposed.png')?>">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="<?=base_url('assets/ico/apple-touch-icon-114-precomposed.png')?>">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="<?=base_url('assets/ico/apple-touch-icon-72-precomposed.png')?>">
+    <link rel="apple-touch-icon-precomposed" href="<?=base_url('assets/ico/apple-touch-icon-57-precomposed.png')?>">
   </head>
 
   <body class="landing">
@@ -33,17 +33,13 @@
 			
 			<article>
 				<header>
-					<h1><img src="/assets/img/logo-landing.png" alt="logotipo" /></h1>
+					<h1><img src="<?=base_url('assets/img/logo-landing.png')?>" alt="logotipo" /></h1>
 					<h2 class="tagline">Encuentra tus productos saludables</h2>
 				</header>
 				<section>
 				
 				<ul class="landing-btns" >
-					<li><div class="boton"><a class="boton" href="/welcome/codigo/">Código de Barra</a></div></li>
-					<br />
-					<li><div class="boton"><a class="boton" href="/welcome/producto/">Busca tu Producto</a></div></li>
-					<br />
-					<li><div class="boton"><a class="boton" href="http://friendlyfood.me/">Contacto</a></div></li>
+					<li><div class="boton"><a class="boton" href="http://friendlyfood.me/">Volver al Home</a></div></li>
 				</ul>
 				
 				
@@ -64,9 +60,9 @@
     <!-- Le javascript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="/assets/js/jquery.js"></script>
-    <script src="/assets/js/bootstrap.min.js"></script>
-	<script src="/assets/js/libs/modernizr-2.0.6.min.js"></script>
+    <script src="<?=base_url('assets/js/jquery.js')?>"></script>
+    <script src="<?=base_url('assets/js/bootstrap.min.js')?>"></script>
+	<script src="<?=base_url('assets/js/libs/modernizr-2.0.6.min.js')?>"></script>
     <script>
       !function ($) {
         $(function(){
